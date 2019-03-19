@@ -21,6 +21,15 @@ class CreateUsersTable extends Migration
             $table->enum('user_type',['admin','user']);
             $table->timestamps();
         });
+
+        DB::table('users')->insert(
+            array(
+                'name' => 'admin',
+                'email' => 'admin@gmail.com',
+                'password' => md5('admin@123'),
+                'user_type' => 'admin'
+            )
+        );
     }
 
     /**

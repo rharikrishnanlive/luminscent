@@ -6,7 +6,7 @@
 	<form method="post" action="{{url('/register')}}">
 		<input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
 		<div class="panel-heading">
-			<h3 class="panel-title">Login</h3>
+			<h3 class="panel-title">Register</h3>
 		</div>
 		<div class="panel-body">
 			
@@ -35,4 +35,5 @@
 		</div>
 	</form>
 </div>
+
 @endsection
